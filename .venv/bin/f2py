@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/wh1/Watashi no Folder Desu./Harbour.Space/InClass/Year1/m7d8_venv/.venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from numpy.f2py.f2py2e import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
